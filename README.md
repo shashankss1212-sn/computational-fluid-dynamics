@@ -8,7 +8,7 @@ How I learned CFD during my M.Sc. at Otto von Guericke University Magdeburg: num
 
 ## Main project – wind loads on the Brandenburg Gate
 
-**Folder:** `Final Project/`  ·  individual course project, submitted to Dr.-Ing. habil. Gabor Janiga, 07/2026
+**Folder:** `Final Project/FInal Project New/`  ·  individual course project, submitted to Dr.-Ing. habil. Gabor Janiga, 07/2026
 
 How hard does the wind push on the gate, and how fast does the air move where people stand? I ran a steady RANS simulation around a full-scale 3D model of the gate at two inlet speeds, 9 m/s and 18 m/s (about 32 and 65 km/h), and from two wind directions. For each case I extracted drag and lift forces, their coefficients and the peak velocity near the gate.
 
@@ -51,7 +51,7 @@ The CSV files in `X Direction Flow/` and `Y Direction Flow/` (the front-on, Z-di
 
 ## Course exercises
 
-### MATLAB – numerics by hand (`Matlab/`)
+### MATLAB – numerics by hand (`Matlab/Trail Excersice/`)
 
 - `Temperature_distribution.m` – 1D steady heat conduction with the finite-volume method: assembles the coefficient matrix, applies the boundary conditions and solves the linear system.
 - `Velocity_distribution_from_stream_function.m` – 2D flow from a stream function solved with Jacobi, Gauss-Seidel and successive over-relaxation (ω = 1.8), then differentiated to get the velocity field; checks that inlet and outlet flow rates balance.
@@ -77,12 +77,12 @@ Steady RANS drag and lift on the USS Albacore hull with a four-level mesh study.
 ## Repository map
 
 ```
-Matlab/                     1D heat conduction (FVM), 2D stream function (Jacobi / Gauss-Seidel / SOR)
+Matlab/Trail Excersice/     1D heat conduction (FVM), 2D stream function (Jacobi / Gauss-Seidel / SOR)
 Laminar Channel/            laminar channel flow
 Elbow/                      elbow mixing
 BFS/                        backward-facing step, k-ε vs k-ω
 Submarine flow simulation/  USS Albacore drag and mesh study
-Final Project/              Brandenburg Gate wind study
+Final Project/FInal Project New/  Brandenburg Gate wind study
 ```
 
 `.sim` files are STAR-CCM+ simulation files, `.msh` is a mesh, `.STL` is CAD geometry; images are exported scenes and plots.
