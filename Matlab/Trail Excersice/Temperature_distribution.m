@@ -1,5 +1,5 @@
 clc
-clear all
+clear
 N = 10; %number of node points
 X = 0.5; %total lenght of the case
 Ar = 0.01; % area of the case
@@ -31,6 +31,6 @@ s = zeros(N,1);
 s(1) = (2 * K * Ar * T_A )/delta_X; %Boundary condition for the start point
 s(N) = (2 * K * Ar * T_B )/delta_X; %Boundary condition for the end point 
 s;
-T = inv(a)* s %matrix muliplication for the tempertature distribution 
+T = a \ s % solve the linear system for the temperature distribution 
 
 plot(T)
